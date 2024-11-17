@@ -11,4 +11,5 @@ public interface IServiceAuthentication {
 
 
     AppUser findByUsername(String username);
+    AppRole findByRole(String role);
 }

@@ -62,4 +62,9 @@ public class ServiceAuthentication implements IServiceAuthentication {
     public AppUser findByUsername(String username) {
         return appUserRepository.findByUsername(username);
     }
+
+    @Override
+    public AppRole findByRole(String role) {
+        return appRoleRepository.findByRole(role);
+    }
 }
